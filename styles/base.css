@@ -29,7 +29,9 @@ header nav ul li a {
     text-decoration: none;
 }
 
-header nav ul li a:hover{color: #ffd700;}
+header nav ul li a:hover {
+    color: #ffd700;
+}
 
 .name {
     text-align: center;
@@ -39,7 +41,7 @@ header nav ul li a:hover{color: #ffd700;}
 .card-container {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
@@ -93,22 +95,22 @@ header nav ul li a:hover{color: #ffd700;}
     margin-left: 5px;
 }
 
-.card nav ul {
+.card ul {
     list-style: disc;
     padding-left: 20px;
 }
 
-.card nav li {
+.card li {
     margin-bottom: 10px;
 }
 
 
-.card nav a {
+.card a {
     text-decoration: none;
     color: #1f4f6f;
 }
 
-.card nav a:hover {
+.card a:hover {
     color: darkblue;
     text-decoration: underline;
 }
@@ -123,4 +125,15 @@ footer p {
     text-align: center;
 }
 
-main{max-width: 1200px;margin: 0 auto;}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+}
