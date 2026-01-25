@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Hilary">
+    <meta name="description"
+        content="This a temple album page, first it starts by creating a header that is in purple in color.">
+
+    <title>Country page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <div class="hero-container">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/place-small.webp" media="(max-width: 600px)">
+                    <source srcset="images/place-medium.webp" media="(max-width: 1200px)">
+                    <img src="images/place-large.webp" alt="hero img" width="1800" height="900">
+                </picture>
+            </div>
+            <div class="data">
+                <h2>Data</h2>
+                <p>Area: <span class="unbold">587,041 sq km</span></p>
+                <p>Population:<span class="unbold"> 27,691,018</span></p>
+                <p>Capital:<span class="unbold"> Antananarivo</span></p>
+                <p>Languages:<span class="unbold"> Malagasy, French</span></p>
+                <p>Currency:<span class="unbold"> Malagasy Ariary</span></p>
+                <p>Time Zone:<span class="unbold"> UTC+3</span></p>
+                <p>Calling Code:<span class="unbold"> +261</span></p>
+                <p>Internet TLD:<span class="unbold"> .mg</span></p>
+            </div>
+            <div class="Weather">
+                <div class="weather-flex">
+                    <h2>Weather</h2>
+                    <img src="images/weather-icon.jpeg" alt="weather">
+                </div>
+                <p>Temperature:<span class="unbold"> 10 ℃</span></p>
+                <p>Conditions:<span class="unbold"> Partly Cloudy</span></p>
+                <p>Wind:<span class="unbold"> 5 km/h</span></p>
+                <p>Wind Chill: <span class="unbold" id="windchill"></span> </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="Year"></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>

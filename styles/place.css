@@ -1,0 +1,93 @@
+header h1 {
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 0, 0, 1);
+    padding: 1.5rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+header h1,
+img {
+    margin: 0;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.data p {
+    font-weight: bold;
+    padding: 0;
+    margin: 0.2rem 0;
+    color: white;
+}
+
+.data {
+    border-radius: 1rem;
+    background-color: blue;
+    display: inline-block;
+    padding: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    opacity: 0.8;
+    overflow: visible;
+}
+
+.data h2 {
+    background-color: #27ae68;
+    color: white;
+    opacity: 1;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-left: -3.5rem;
+    margin-top: -0.5rem;
+    width: 70%;
+}
+
+.Weather {
+    border-radius: 1rem;
+    background-color: blue;
+    display: inline-block;
+    padding: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0.8;
+    overflow: visible;
+}
+
+.Weather h2 {
+    color: white;
+}
+
+.Weather p {
+    font-weight: bold;
+    padding: 0;
+    margin: 0.2rem 0;
+    color: white;
+}
+
+.weather-flex {
+    display: flex;
+    gap: 1rem;
+    background-color: #27ae68;
+    align-items: center;
+    margin-left: -4.5rem;
+    margin-top: -1.5rem;
+    padding: 0 1rem;
+}
+
+.weather-flex h2::after{content: url(images/weather-icon.jpeg);}
+
+.weather-flex img {
+    width: 48px;
+    height: 38px;
+}
+
+footer{text-align: center;background-color: rgba(255, 0, 0, 1);color: white;padding: 1rem;margin: 0;}
+.unbold{font-weight: normal;color: red;}
