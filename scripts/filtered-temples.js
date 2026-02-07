@@ -135,7 +135,7 @@ document.querySelector("#home").addEventListener("click", () => {
   displayTemples(temples); // show all
 });
 
-document.querySelector("#old").addEventListener("click", () => {
+document.querySelector("#old").addEventListener("click", () => { 
   const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
   displayTemples(oldTemples);
 });

@@ -1,0 +1,80 @@
+/* ---------------------------
+   Site Plan Basic Styling
+   Kabianga Student Housing Guide
+---------------------------- */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1f3a5f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+/* Main content */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #1f3a5f;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #1f3a5f;
+    margin-top: 15px;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Accent elements */
+strong {
+    color: #2ecc71;
+}
