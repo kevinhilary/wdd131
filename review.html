@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+<main>
+    <h2>Thank You!</h2>
+    <p>Your review has been submitted successfully.</p>
+</main>
+
+<footer>
+    <p>
+        Kevin Hillary © <span id="year"></span> |
+        Last Modified: <span id="modified"></span>
+    </p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("modified").textContent = document.lastModified;
+</script>
+
+</body>
+</html>
