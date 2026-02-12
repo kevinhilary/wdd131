@@ -12,10 +12,15 @@ yes.onclick = () => {
     `;
 
     // Heartfelt typing message
-    const message = "You just made me the happiest person alive 😍\n\n" +
-                    "I promise to cherish you, laugh with you, and love you every day 💕🌹\n\n" +
-                    "Thank you for trusting me ❤️\n\n" + 
-                    "I LOVE YOU SO MUCH BABY \n\n" + 
+    const message = "Ooops my love💖💚💛, You just made me the happiest person alive 😍\n\n" +
+                    "I have been meaning to say this properly instead of rushing it in bits and pieces.💕🌹\n\n" +
+                    "You genuinely mean alot to me, more than I usually say out loud. \n\n" +
+                    "In a world that's always moving fast, you're the part of my life that makes me pause, smile and feel grounded. \n\n" +
+                    "Honestly, I want to genuinely appreciate the love, understanding and closeness you have shown to me. \n\n" +
+                    "All the soft and romantic moments we share never go unnoticed 💟💛💟. \n\n" +
+                    "Thank you for trusting me and loving me unnconditionally❤️\n\n" + 
+                    "💐 HAPPY VALENTINES DAY BABY 💐 \n\n" +
+                    "I LOVE YOU SO MUCH \n\n" + 
                     "❤✨❤✨";
 
     const loveMessageEl = document.getElementById("loveMessage");
