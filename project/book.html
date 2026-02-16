@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Hilary">
+    <meta name="description"
+        content="This is a dynamic page that introduces universiyy of kabianga students to online affordable apartment booking">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script defer src="scripts/project.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="imagess/logo.jpeg" alt="logo">
+            <h1>Kabianga Student Housing</h1>
+        </div>
+        <div class="right">
+            <a id="menu" href="javascript:void(0)">≡</a>
+            <nav class="sidebar">
+                <ul class="navigationham">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="">Apartments</a></li>
+                    <li> <a href="book.html">Contact</a></li>
+                    <li> <a href="">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="booking-page">
+        <div class="container">
+            <h1>Book an Apartment / Contact Landlord</h1>
+            <p>Fill the form below to inquire or book your preferred apartment.</p>
+
+            <form id="bookingForm">
+                <!-- Student Name -->
+                <label for="studentName">Full Name</label>
+                <input type="text" id="studentName" name="studentName" placeholder="John Doe" required>
+
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <!-- Phone -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254 7XXXXXXXX" required>
+
+                <!-- Apartment Choice -->
+                <label for="apartment">Select Apartment</label>
+                <select id="apartment" name="apartment" required>
+                    <option value="">-- Choose an Apartment --</option>
+                    <option value="Apartment A">Apartment A</option>
+                    <option value="Apartment B">Apartment B</option>
+                    <option value="Apartment C">Apartment C</option>
+                </select>
+
+                <!-- Additional Requests -->
+                <label for="requests">Additional Requests</label>
+                <textarea id="requests" name="requests" placeholder="Any special requests?" rows="4"></textarea>
+
+                <!-- Submit -->
+                <button type="submit" class="btn">Submit Booking</button>
+            </form>
+
+            <!-- Booking Confirmation -->
+            <div id="confirmation" class="confirmation"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@kabiangaapartments.com</p>
+                    <p>Phone: +254 700 000 000</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="#"><img src="imagess/facebook.jpeg" alt="Facebook"></a>
+                    <a href="#"><img src="imagess/twitter.jpeg" alt="Twitter"></a>
+                    <a href="#"><img src="imagess/instagram.jpeg" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kabianga Student Apartments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Hilary">
+    <meta name="description"
+        content="This is a dynamic page that introduces universiyy of kabianga students to online affordable apartment booking">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script defer src="scripts/project.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="imagess/logo.jpeg" alt="logo">
+            <h1>Kabianga Student Housing</h1>
+        </div>
+        <div class="right">
+            <a id="menu" href="javascript:void(0)">≡</a>
+            <nav class="sidebar">
+                <ul class="navigationham">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="">Apartments</a></li>
+                    <li> <a href="book.html">Contact</a></li>
+                    <li> <a href="">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 480px)" srcset="imagess/heroimagesmall.webp">
+                <source media="(max-width: 1024px)" srcset="imagess/heroimagemedium.webp">
+                <img src="imagess/heroimagelarge.webp" alt="Student apartments" loading="lazy">
+            </picture>
+            <div class="hero-container">
+                <h1>Find Your Perfect Student Apartment in Kabianga - Kapkatet Campus</h1>
+                <p>Browse verified apartments, compare prices, and contact landlords directly.</p>
+                <div class="hero-buttons">
+                    <a href="apartments.html" class="btn-primary">View Apartments</a>
+                    <a href="#estimate" class="btn-secondary">Estimate Rent</a>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose Student Apartments Around Kabianga?</h2>
+                <p>We provide clear, organized information to help students make the best housing choices.</p>
+
+                <div class="feature-cards">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/bedsittersmall.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/bedsittermedium.webp">
+                            <img src="imagess/bedsitterlarge.webp" alt="Room Types Icon" loading="lazy">
+                        </picture>
+                        <h3>Room Types</h3>
+                        <p>Single, shared, or studio options available to fit every student’s needs.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/rentsmall.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/rentmedium.webp">
+                            <img src="imagess/rentlarge.webp" alt="Rent Icon" loading="lazy">
+                        </picture>
+                        <h3>Rent Ranges</h3>
+                        <p>See approximate monthly rent for each apartment so you can budget easily.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/watersmall.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/watermedium.webp">
+                            <img src="imagess/waterlarge.webp" alt="Water Icon" loading="lazy">
+                        </picture>
+                        <h3>Water Availability</h3>
+                        <p>Know which apartments have reliable water supply before you move in.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/locationsmall.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/locationmedium.webp">
+                            <img src="imagess/locationlarge.webp" alt="Distance Icon" loading="lazy">
+                        </picture>
+                        <h3>Distance From Campus</h3>
+                        <p>Check how far each apartment is from Kabianga University campus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="apartments">
+            <div class="container">
+                <h2>Featured Apartments Around Kabianga</h2>
+                <p>Check out some of the most popular student apartments near campus.</p>
+
+                <div class="apartment-cards">
+                    <!-- Apartment 1 -->
+                    <div class="apartment-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/apartment1small.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/apartment1medium.webp">
+                            <img src="imagess/apartment1large.webp" alt="Apartment 1" loading="lazy">
+                        </picture>
+                        <h3>Kabianga Residence</h3>
+                        <p>Single and shared rooms, close to campus, rent: Ksh 5,000–8,000</p>
+                        <a href="booking.html" class="btn">View / Book</a>
+                    </div>
+
+                    <!-- Apartment 2 -->
+                    <div class="apartment-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/apartment2small.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/apartment2medium.webp">
+                            <img src="imagess/apartment2large.webp" alt="Apartment 2" loading="lazy">
+                        </picture>
+                        <h3>Sunrise Apartments</h3>
+                        <p>Reliable water supply, spacious rooms, rent: Ksh 6,000–9,000</p>
+                        <a href="booking.html" class="btn">View / Book</a>
+                    </div>
+
+                    <!-- Apartment 3 -->
+                    <div class="apartment-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/apartment3small.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/apartment3medium.webp">
+                            <img src="imagess/apartment3large.webp" alt="Apartment 3" loading="lazy">
+                        </picture>
+                        <h3>Campus View Flats</h3>
+                        <p>Quiet area, good security, rent: Ksh 7,000–10,000</p>
+                        <a href="booking.html" class="btn">View / Book</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tips">
+            <div class="container">
+                <h2>Tips for Choosing Your Apartment</h2>
+                <p>Follow these simple tips to find the best student apartment near Kabianga University.</p>
+
+                <div class="tip-cards">
+                    <!-- Tip 1 -->
+                    <div class="tip-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/watersmall.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/watermedium.webp">
+                            <img src="imagess/waterlarge.webp" alt="Water Icon" loading="lazy">
+                        </picture>
+                        <h3>Check Water Availability</h3>
+                        <p>Make sure the apartment has a reliable water supply before moving in.</p>
+                    </div>
+
+                    <!-- Tip 2 -->
+                    <div class="tip-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/rentsmall.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/rentmedium.webp">
+                            <img src="imagess/rentlarge.webp" alt="Rent Icon" loading="lazy">
+                        </picture>
+                        <h3>Compare Rent</h3>
+                        <p>Balance affordability with distance from campus and room quality.</p>
+                    </div>
+
+                    <!-- Tip 3 -->
+                    <div class="tip-card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="imagess/locationsmall.webp">
+                            <source media="(max-width: 1024px)" srcset="imagess/locationmedium.webp">
+                            <img src="imagess/locationlarge.webp" alt="Distance Icon" loading="lazy">
+                        </picture>
+                        <h3>Visit Before Booking</h3>
+                        <p>Always visit the apartment in person to verify conditions and security.</p>
+                    </div>
+                </div>
+
+                <a href="tips.html" class="btn">Read All Tips</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@kabiangaapartments.com</p>
+                    <p>Phone: +254 700 000 000</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="#"><img src="imagess/facebook.jpeg" alt="Facebook"></a>
+                    <a href="#"><img src="imagess/twitter.jpeg" alt="Twitter"></a>
+                    <a href="#"><img src="imagess/instagram.jpeg" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kabianga Student Apartments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
