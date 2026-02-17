@@ -52,3 +52,99 @@ bookingForm.addEventListener('submit', (e) => {
     // Optional: reset form
     bookingForm.reset();
 });
+
+// ===== Tips Data =====
+const tips = [
+  {
+    category: "water",
+    title: "Check Water Availability",
+    content: "Ask tenants about water shortages and confirm presence of storage tanks."
+  },
+  {
+    category: "rent",
+    title: "Compare Rent Prices",
+    content: "Compare multiple apartments to ensure you are paying fair market price."
+  },
+  {
+    category: "security",
+    title: "Evaluate Security",
+    content: "Check for lighting, guards, and secure doors before booking."
+  },
+  {
+    category: "rent",
+    title: "Understand Deposit Terms",
+    content: "Clarify refund conditions before paying deposit."
+  },
+  {
+    category: "water",
+    title: "Ask About Utility Bills",
+    content: "Confirm whether water and electricity bills are included in rent."
+  }
+];
+
+const tipsContainer = document.getElementById("tipsContainer");
+const buttons = document.querySelectorAll(".filter-buttons button");
+
+// ===== Display Function =====
+function showTips(category) {
+
+  tipsContainer.innerHTML = "";
+
+  let filteredTips;
+
+  if (category === "all") {
+    filteredTips = tips;
+  } else {
+    filteredTips = tips.filter(tip => tip.category === category);
+  }
+
+  filteredTips.forEach(tip => {
+    const card = document.createElement("div");
+    card.classList.add("tip-card");
+
+    card.innerHTML = `
+      <div class="tip-title">${tip.title}</div>
+      <div class="tip-content">${tip.content}</div>
+    `;
+
+    // Toggle content (accordion)
+    card.addEventListener("click", () => {
+      card.classList.toggle("active");
+    });
+
+    tipsContainer.appendChild(card);
+  });
+
+  // Save selected category
+  localStorage.setItem("selectedCategory", category);
+}
+
+// ===== Button Click Events =====
+buttons.forEach(button => {
+  button.addEventListener("click", function () {
+
+    // Remove active from all
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    this.classList.add("active");
+
+    const category = this.dataset.category;
+
+    showTips(category);
+  });
+});
+
+// ===== Load Page =====
+window.addEventListener("DOMContentLoaded", function () {
+
+  const savedCategory = localStorage.getItem("selectedCategory") || "all";
+
+  // Activate correct button safely
+  buttons.forEach(button => {
+    if (button.dataset.category === savedCategory) {
+      button.classList.add("active");
+    }
+  });
+
+  showTips(savedCategory);
+});
